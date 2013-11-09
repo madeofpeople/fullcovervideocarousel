@@ -1,0 +1,37 @@
+@import "variables";
+@import "mixins";
+@import "compass/typography/vertical_rhythm";
+
+@include establish-baseline;
+
+body { font-size: $baseFontSize; line-height: $baseLineHeight; font-family: $baseFontFamily; }
+
+h1
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  margin-bottom: .25em;
+  font-family: $displayFont;
+  font-weight: normal;
+}
+
+h1 { font-size: $baseFontSize * 4.5; }
+h2 { font-size: $baseFontSize * 3.5; }
+h3 { font-size: $baseFontSize * 2.5; }
+h4 { font-size: $baseFontSize * 1.5; } 
+h5 { font-size: $baseFontSize; }
+
+@mixin bg-cover( $background-image ){
+  @if background-image {
+    background-image: url( $background-image );
+    background-position: center center;
+    @include background-size(cover);
+  }
+}
+
+// Vendor Imports:
+@import "compass";
+@import "compass/css3/transition";
+ 
