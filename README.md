@@ -1,4 +1,4 @@
-paypal-blueprint
-================
+fullcovervideocarousel
+======================
 
-PayPal Blueprint microsite
+Using bigVideo.js and OWL Carousel to make a full page video slideshow.
